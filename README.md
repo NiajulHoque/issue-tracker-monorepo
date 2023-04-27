@@ -52,6 +52,8 @@ $ yarn build
 
 ### Development
 
+Follow the steps in the README files in all projects then come back here and follow the next steps...
+
 `Docker Compose`:
 
 ```bash
