@@ -57,8 +57,7 @@ Follow the steps in the README files in all projects then come back here and fol
 `Docker Compose`:
 
 ```bash
-# Runs the process in the background, remove the "-d" flag if you want to run it in the current terminal process
-$ docker compose -f docker-compose.dev.yml down --volumes && docker compose -f docker-compose.dev.yml build --parallel && docker compose -f docker-compose.dev.yml up -d
+$ docker compose -f docker-compose.dev.yml down --volumes && docker compose -f docker-compose.dev.yml build --parallel && docker compose -f docker-compose.dev.yml up
 ```
 
 ---

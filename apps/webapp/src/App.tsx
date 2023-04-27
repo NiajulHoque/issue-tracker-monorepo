@@ -1,13 +1,16 @@
 import { useState } from 'react';
 
 import reactLogo from './assets/react.svg';
+import ApiStatusAlert from './components/ApiStatusAlert';
 import viteLogo from '/vite.svg';
 
 const App = () => {
   const [count, setCount] = useState(0);
 
   return (
-    <div className='mx-auto flex flex-col items-center justify-center gap-4'>
+    <div className='mx-auto flex flex-col items-center justify-center gap-4 p-4'>
+      <ApiStatusAlert />
+
       <div>
         <a href='https://vitejs.dev' target='_blank'>
           <img src={viteLogo} className='logo' alt='Vite logo' />
