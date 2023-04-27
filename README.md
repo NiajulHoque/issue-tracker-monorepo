@@ -52,10 +52,11 @@ $ yarn build
 
 ### Development
 
-To develop all apps and packages, run the following command:
+`Docker Compose`:
 
 ```bash
-$ yarn dev
+# Runs the process in the background, remove the "-d" flag if you want to run it in the current terminal process
+$ docker compose -f docker-compose.dev.yml down --volumes && docker compose -f docker-compose.dev.yml build --parallel && docker compose -f docker-compose.dev.yml up -d
 ```
 
 ---

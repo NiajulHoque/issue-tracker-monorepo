@@ -1,5 +1,5 @@
 {
-  "importOrder": ["<THIRD_PARTY_MODULES>", "^shared-code/(.*)$", "^[./]"],
+  "importOrder": ["<THIRD_PARTY_MODULES>", "^@/shared-code$", "^[./]"],
   "importOrderSeparation": true,
   "importOrderSortSpecifiers": true,
   "singleQuote": true,

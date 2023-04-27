@@ -1,0 +1,22 @@
+version: "3.9"
+
+services:
+  monorepo:
+    build:
+      context: .
+      dockerfile: ./Dockerfile.dev
+    ports:
+      - "3000:3000"
+      - "8080:8080"
+    env_file:
+      - ./apps/webapp/.env
+      - ./apps/api/.env
+    volumes:
+      - .:/app
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:6.0.4
+    ports:
+      - "27017:27017"

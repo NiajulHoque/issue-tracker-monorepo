@@ -1,0 +1,19 @@
+# -------------------------------------------------
+# Build stage
+# -------------------------------------------------
+FROM node:18
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy the package.json and the lock file to the container
+COPY package.json yarn.lock ./
+
+# Install the app's dependencies
+RUN yarn install
+
+# Copy the rest of the files from the project
+COPY . ./
+
+# Run the project in dev mode
+CMD [ "yarn", "dev" ]

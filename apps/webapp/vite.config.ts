@@ -9,6 +9,7 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
+      '@/shared-code': path.resolve(baseFolder, '../../packages/shared-code'),
       '@': path.resolve(baseFolder, './src')
     }
   },
@@ -18,7 +19,7 @@ export default defineConfig({
   },
   server: {
     host: '0.0.0.0',
-    port: 3001,
+    port: 3000,
     hmr: true,
     cors: true
   }
