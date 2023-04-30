@@ -8,7 +8,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-app.get('/status', (_, res) => {
+app.get('/status', (req, res) => {
   res.status(200).json({
     status: 'online'
   });
