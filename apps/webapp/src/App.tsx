@@ -7,6 +7,8 @@ import viteLogo from '/vite.svg';
 const App = () => {
   const [count, setCount] = useState(0);
 
+  console.log(count);
+
   return (
     <div className='mx-auto flex flex-col items-center justify-center gap-4 p-4'>
       <ApiStatusAlert />
